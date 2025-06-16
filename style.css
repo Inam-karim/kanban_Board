@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222831; /* dark background */
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background: #393E46; /* dark gray sidebar */
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.main {
+  flex-grow: 1;
+  overflow: auto;
+  background-image: url(/custom-kanban-board/bg\ \(2\).jpg);
+  background-size: cover;
+}
+
+.main-content {
+  padding: 20px;
+  color: #DFD0B8; /* light cream text */
+  background-color: #393E46; /* dark background for main content */
+}
+
+.tasklists {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.tasklist {
+  background-color: #948979; /* muted brown card background */
+  border-radius: 6px;
+  padding: 10px;
+  min-width: 200px;
+  min-height: 300px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tasklist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #fff; 
+}
+
+.tasklist-header h4 {
+  margin: 0;
+}
+
+.tasklist ul {
+  list-style: none;
+  padding: 0;
+  min-height: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.tasklist li {
+  background-color: #DFD0B8; /* light task background */
+  padding: 6px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+.add-task-btn {
+  background-color: #222831; /* button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 13px;
+  margin-top: 8px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.add {
+  background-color: #222831; /* matching add color */
+  color: #DFD0B8;
+}
+
+input,
+button {
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.board-box {
+  background: #DFD0B8; /* light box */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
