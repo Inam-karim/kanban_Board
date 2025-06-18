@@ -2,14 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #222831; /* dark background */
+  background-color: #0f6d73; /* dark background */
   display: flex;
 }
 
 .sidebar {
   width: 300px;
   padding: 20px;
-  background: #393E46; /* dark gray sidebar */
+  background: #0f6d73; /* dark gray sidebar */
   height: 100vh;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
@@ -18,14 +18,15 @@ body {
 .main {
   flex-grow: 1;
   overflow: auto;
-  background-image: url(/custom-kanban-board/bg\ \(2\).jpg);
+  background-color: #fff;
+  /* background-image: url(/custom-kanban-board/bg\ \(2\).jpg); */
   background-size: cover;
 }
 
 .main-content {
   padding: 20px;
-  color: #DFD0B8; /* light cream text */
-  background-color: #393E46; /* dark background for main content */
+  color: #fff; /* light cream text */
+  background-color: #0f6d73; /* dark background for main content */
 }
 
 .tasklists {
@@ -36,7 +37,7 @@ body {
 }
 
 .tasklist {
-  background-color: #948979; /* muted brown card background */
+  background-color: #487b7d; /* muted brown card background */
   border-radius: 6px;
   padding: 10px;
   min-width: 200px;
@@ -68,8 +69,9 @@ body {
 }
 
 .tasklist li {
-  background-color: #DFD0B8; /* light task background */
+  background-color: #fff; /* light task background */
   padding: 6px;
+  margin-top: 15px;
   margin-bottom: 6px;
   border-radius: 4px;
   cursor: grab;
@@ -113,7 +115,7 @@ button {
 }
 
 .board-box {
-  background: #DFD0B8; /* light box */
+  background: #fff; /* light box */
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 8px;

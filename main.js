@@ -483,6 +483,6 @@ async function deleteTaskFromFrontend(taskId) {
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchBoards();
-  document.getElementById('boardTitle').textContent = 'WELCOME TO YOUR WORKING SPACE...';
+  document.getElementById('boardTitle').textContent = '';
   document.getElementById('tasklists').innerHTML = '';
 });
